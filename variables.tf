@@ -12,13 +12,13 @@ variable "certificate_body_file" {
 
 variable "certificate_chain_file" {
   type = string
-  description = "Path to the PEM-formatted interm or chain certificate, some regions may require the chain cert be in 'reverse' format."
+  description = "Path to the PEM-formatted interim or chain certificate, some regions may require the chain cert be in 'reverse' format."
   sensitive = true
 }
 
 variable "stack_name" {
   default = "stack"
-  description = "Name of the stack, helps delinate between different projects."
+  description = "Name of the stack, helps delineate between different projects."
 }
 
 variable "vpc_id" {
@@ -28,7 +28,7 @@ variable "vpc_id" {
 
 variable "subnet_ids" {
     type = list(string)
-    description = "List of subnet IDs, requires two in different availablity zones"
+    description = "List of subnet IDs, requires two in different availability zones"
 }
 
 variable "tags" {
