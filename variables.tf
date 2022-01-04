@@ -36,3 +36,9 @@ variable "tags" {
   default = {}
   description = "Map of tags, will be added to the common tags local"
 }
+
+variable "message_body" {
+  type = string
+  default = "Emory University Libraries"
+  description = "Message that will be returned by the listener itself"
+}
