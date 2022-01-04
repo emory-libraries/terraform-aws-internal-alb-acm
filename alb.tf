@@ -33,7 +33,7 @@ resource "aws_alb_listener" "alb_listener" {
   
     fixed_response {
       content_type = "text/plain"
-      message_body = "Emory University Libraries"
+      message_body = var.message_body
       status_code  = "200"
     }
   }
